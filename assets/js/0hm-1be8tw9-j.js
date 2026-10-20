@@ -1,1 +1,0 @@
-(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,390166,e=>{"use strict";var t=e.i(843476),u=e.i(271645),i=e.i(406394);e.s(["GuideAuswahl",0,function({auswahl:e}){let[s,l]=(0,u.useState)(0);return(0,t.jsx)(i.Einrichtung,{schluessel:[],gekauft:e,gewaehltVon:s,aufWahl:l})}])}]);
