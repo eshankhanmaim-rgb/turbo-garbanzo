@@ -1,0 +1,111 @@
+.FaqSection-module__UtxuQW__section {
+    padding: var(--sp-20) var(--sp-6);
+    background: var(--c-bg);
+    border-top: 1px solid #ffffff0d
+}
+
+.FaqSection-module__UtxuQW__inner {
+    max-width: 760px;
+    margin: 0 auto
+}
+
+body:has(.hr-v1) .FaqSection-module__UtxuQW__inner {
+    max-width: var(--faq-breite)
+}
+
+.FaqSection-module__UtxuQW__header {
+    text-align: center;
+    margin-bottom: var(--sp-12)
+}
+
+.FaqSection-module__UtxuQW__heading {
+    font-size: var(--fs-4);
+    color: var(--tx-1);
+    margin-bottom: var(--sp-3);
+    font-weight: 700
+}
+
+.FaqSection-module__UtxuQW__subline {
+    color: var(--tx-3);
+    font-size: var(--fs-3)
+}
+
+.FaqSection-module__UtxuQW__list {
+    gap: var(--sp-2);
+    flex-direction: column;
+    display: flex
+}
+
+.FaqSection-module__UtxuQW__item {
+    border: 1px solid var(--li-2);
+    border-radius: var(--r-md);
+    background: var(--li-0);
+    overflow: hidden
+}
+
+.FaqSection-module__UtxuQW__item summary {
+    padding: var(--sp-4) var(--sp-6);
+    cursor: pointer;
+    font-size: var(--fs-3);
+    color: var(--tx-1);
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--sp-4);
+    transition: background var(--mo-normal) var(--mo-kurve);
+    font-weight: 600;
+    list-style: none;
+    display: flex
+}
+
+.FaqSection-module__UtxuQW__item summary:hover {
+    background: #ffffff08
+}
+
+.FaqSection-module__UtxuQW__item summary::-webkit-details-marker {
+    display: none
+}
+
+.FaqSection-module__UtxuQW__chevron {
+    transition: transform var(--mo-normal) var(--mo-kurve);
+    color: var(--ac-1);
+    flex-shrink: 0
+}
+
+.FaqSection-module__UtxuQW__item[open] .FaqSection-module__UtxuQW__chevron {
+    transform: rotate(180deg)
+}
+
+.FaqSection-module__UtxuQW__body {
+    padding: 0 var(--sp-6) var(--sp-4);
+    font-size: var(--fs-2);
+    color: var(--tx-3);
+    line-height: 1.7
+}
+
+.FaqSection-module__UtxuQW__item[open] .FaqSection-module__UtxuQW__body {
+    animation: FaqSection-module__UtxuQW__faq-inhalt-auf var(--mo-normal, .24s) var(--mo-kurve)
+}
+
+@keyframes FaqSection-module__UtxuQW__faq-inhalt-auf {
+    0% {
+        opacity: 0;
+        transform: translateY(-4px)
+    }
+
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+@media (prefers-reduced-motion:reduce) {
+    .FaqSection-module__UtxuQW__item[open] .FaqSection-module__UtxuQW__body {
+        animation: none
+    }
+}
+
+@media (min-width:768px) {
+    .FaqSection-module__UtxuQW__heading {
+        font-size: var(--fs-5)
+    }
+}
